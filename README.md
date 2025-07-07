@@ -4,12 +4,12 @@
 
 This project consists of 4 tasks centered around low-level memory operations, recursion, and string manipulation using both C and Assembly.
 
-### ✅ Task 1 – Sortari (20p)
+### ✅ Task 1 – Sort
 
 Implemented the `sort` function to sort a sequence of linked list nodes based on their `val` field using an in-place selection sort approach.  
 Because the values were guaranteed to be consecutive integers starting from 1, I looped through values from `1` to `n` and at each step, searched the node with that value. Then, I linked each node to the next node in increasing order using the `next` pointer.  
 
-### ✅ Task 2 – Operatii (25p)
+### ✅ Task 2 – Operations
 
 This task was split into two functions:
 
@@ -21,7 +21,7 @@ This task was split into two functions:
   Implemented a custom comparator function that first compared by word length (`strlen`) and then lexicographically using `strcmp`.  
   Used the C `qsort` function to sort the word vector.
 
-### ✅ Task 3 – KFib (20p)
+### ✅ Task 3 – KFib
 
 Implemented the recursive generalized Fibonacci sequence `KFib(n, K)` with:
 
@@ -31,12 +31,12 @@ Implemented the recursive generalized Fibonacci sequence `KFib(n, K)` with:
 
 Recursive implementation carefully handles stack frames. Implemented and tested up to `n = 40`, `K = 30`.
 
-### ✅ Task 4 – Composite Palindrome (35p)
+### ✅ Task 4 – Composite Palindrome
 
-#### Subtask 1 – Palindrome Check (5p)
+#### Subtask 1 – Palindrome Check
 Implemented a function `check_palindrome` that compares characters symmetrically from start and end of the string, up to the midpoint. Returns `1` if palindrome, otherwise `0`.
 
-#### Subtask 2 – Composite Palindrome (30p)
+#### Subtask 2 – Composite Palindrome
 
 Approach:
 - Used bit masking to generate all `2^n - 1` ordered subsets of word indices.
